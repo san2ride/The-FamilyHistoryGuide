@@ -12,7 +12,6 @@
         <!--Intro View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="IntroViewController" customModule="TheFHG" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -28,18 +27,40 @@
                                     <constraint firstAttribute="height" constant="107" id="fcH-lD-dr1"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction                       learn the basics here                                                          " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-1i-nMf">
+                                <rect key="frame" x="12" y="12" width="138" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="S7J-bl-rqG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLS-1S-1PV">
+                                <rect key="frame" x="12" y="69" width="138" height="30"/>
+                                <color key="backgroundColor" red="0.0078431372549019607" green="0.14509803921568626" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Take the Quick Tour"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nsZ-1i-nMf" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="12" id="43z-wh-stt"/>
+                            <constraint firstItem="nsZ-1i-nMf" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="12" id="R1z-ob-URP"/>
                             <constraint firstAttribute="trailing" secondItem="LtG-Ms-xT7" secondAttribute="trailing" id="SmB-iI-NZi"/>
                             <constraint firstItem="LtG-Ms-xT7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="TGK-5q-suj"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="FLS-1S-1PV" secondAttribute="bottom" constant="455" id="ZLm-4r-RbY"/>
                             <constraint firstItem="LtG-Ms-xT7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="h2F-Gb-D09"/>
+                            <constraint firstItem="FLS-1S-1PV" firstAttribute="top" secondItem="nsZ-1i-nMf" secondAttribute="bottom" constant="19" id="nZb-oa-yTM"/>
+                            <constraint firstItem="FLS-1S-1PV" firstAttribute="trailing" secondItem="nsZ-1i-nMf" secondAttribute="trailing" id="vbt-b6-RKS"/>
+                            <constraint firstItem="LtG-Ms-xT7" firstAttribute="leading" secondItem="nsZ-1i-nMf" secondAttribute="trailing" constant="-150" id="wA1-FE-ElB"/>
+                            <constraint firstItem="FLS-1S-1PV" firstAttribute="width" secondItem="nsZ-1i-nMf" secondAttribute="width" id="yNT-AO-gpW"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ZZ8-x9-gIs">
-                        <barButtonItem key="rightBarButtonItem" title="more" id="0Jt-4d-U4c"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="ZZ8-x9-gIs"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048.8" y="-463.71814092953525"/>
         </scene>
@@ -58,13 +79,37 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heroproject" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-sv-J3O">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project 1: Family Tree" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPi-OL-uAR">
+                                <rect key="frame" x="8" y="8" width="209" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ehC-Gp-CaG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                <color key="textColor" red="0.0078431372550000003" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigate your family tree, add ancestors, and update ancestor information in FamilySearch." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-Uh-e0J">
+                                <rect key="frame" x="8" y="44" width="298" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FZA-sm-gHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                <color key="textColor" red="0.0078431372550000003" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wPi-OL-uAR" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="5nC-Rk-dHr"/>
+                            <constraint firstItem="wPi-OL-uAR" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="8" id="DkY-29-mUH"/>
                             <constraint firstItem="Kte-sv-J3O" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="J2g-nU-4Dn"/>
                             <constraint firstItem="Kte-sv-J3O" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="P1F-bf-XII"/>
+                            <constraint firstItem="CNO-Uh-e0J" firstAttribute="top" secondItem="wPi-OL-uAR" secondAttribute="bottom" constant="8" id="VtB-ul-sZt"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Kte-sv-J3O" secondAttribute="bottom" constant="444" id="WDl-Yp-Fge"/>
                             <constraint firstAttribute="trailing" secondItem="Kte-sv-J3O" secondAttribute="trailing" id="cVc-LJ-Wui"/>
+                            <constraint firstItem="Kte-sv-J3O" firstAttribute="leading" secondItem="wPi-OL-uAR" secondAttribute="trailing" constant="-217" id="iZa-1X-Eco"/>
+                            <constraint firstItem="CNO-Uh-e0J" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="8" id="jvV-SN-wTF"/>
+                            <constraint firstItem="Kte-sv-J3O" firstAttribute="leading" secondItem="CNO-Uh-e0J" secondAttribute="trailing" constant="-306" id="mC0-WM-YJG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eeu-dI-InY"/>
@@ -91,10 +136,34 @@
                                     <constraint firstAttribute="height" constant="110" id="SOf-ne-hj9"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLC-u2-qTs">
+                                <rect key="frame" x="6" y="8" width="148" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="2iY-wr-mcb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Training section of The Family History Guide." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7p-qw-cDi">
+                                <rect key="frame" x="6" y="45" width="240" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="3jX-Ku-yOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dLC-u2-qTs" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" constant="6" id="46r-tF-0Kg"/>
+                            <constraint firstItem="w7p-qw-cDi" firstAttribute="top" secondItem="dLC-u2-qTs" secondAttribute="bottom" constant="1" id="7JX-rI-n5o"/>
+                            <constraint firstItem="w7p-qw-cDi" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" constant="6" id="BUH-Na-tw8"/>
+                            <constraint firstItem="dLC-u2-qTs" firstAttribute="top" secondItem="2dO-Yd-1xr" secondAttribute="bottom" constant="8" id="GUo-WA-KUo"/>
+                            <constraint firstItem="7yZ-Yc-oeO" firstAttribute="leading" secondItem="w7p-qw-cDi" secondAttribute="trailing" constant="-246" id="PAQ-fL-zq9"/>
                             <constraint firstAttribute="trailing" secondItem="7yZ-Yc-oeO" secondAttribute="trailing" id="W3b-mL-4TR"/>
+                            <constraint firstItem="7yZ-Yc-oeO" firstAttribute="leading" secondItem="dLC-u2-qTs" secondAttribute="trailing" constant="-154" id="iTf-sW-p4R"/>
                             <constraint firstItem="7yZ-Yc-oeO" firstAttribute="top" secondItem="2dO-Yd-1xr" secondAttribute="bottom" id="mkS-tf-i7O"/>
                             <constraint firstItem="7yZ-Yc-oeO" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" id="zsB-nc-3B5"/>
                         </constraints>
@@ -157,7 +226,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Iv3-Jf-9BF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Iv3-Jf-9BF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -178,7 +247,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="BRS-27-Tqj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BRS-27-Tqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
