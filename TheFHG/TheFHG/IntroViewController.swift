@@ -8,23 +8,16 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
+class IntroViewController: UIViewController, UINavigationBarDelegate {
 
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        var nav = self.navigationController?.navigationBar
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 128, height: 42))
         imageView.contentMode = .scaleAspectFit
         
-        let image = UIImage(named: "fhgLogo")
+        let image = UIImage(named: "fhgnew4")
         imageView.image = image
         
         navigationItem.titleView = imageView

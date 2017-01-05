@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,41 +9,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--introduction-->
+        <!--Intro View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="IntroViewController" customModule="TheFHG" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fhgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3Go-4w-vyi">
-                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herointro" translatesAutoresizingMaskIntoConstraints="NO" id="LtG-Ms-xT7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="107"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="dhO-gf-tme"/>
+                                    <constraint firstAttribute="height" constant="107" id="fcH-lD-dr1"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3Go-4w-vyi" secondAttribute="trailing" id="KSF-pU-BEv"/>
-                            <constraint firstItem="3Go-4w-vyi" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="vwK-LD-kFL"/>
-                            <constraint firstItem="3Go-4w-vyi" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="yU1-Yl-dCS"/>
+                            <constraint firstAttribute="trailing" secondItem="LtG-Ms-xT7" secondAttribute="trailing" id="SmB-iI-NZi"/>
+                            <constraint firstItem="LtG-Ms-xT7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="TGK-5q-suj"/>
+                            <constraint firstItem="LtG-Ms-xT7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="h2F-Gb-D09"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="introduction" image="home" id="acW-dT-cKf">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="ZZ8-x9-gIs">
+                        <barButtonItem key="rightBarButtonItem" title="more" id="0Jt-4d-U4c"/>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="-656.22188905547227"/>
+            <point key="canvasLocation" x="1048.8" y="-463.71814092953525"/>
         </scene>
-        <!--project-->
+        <!--Projects View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ProjectsViewController" customModule="TheFHG" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,32 +52,28 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fhgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="QiC-sk-yp6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="lAA-pG-v2y"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heroproject" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-sv-J3O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QiC-sk-yp6" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="2ef-cn-fZI"/>
-                            <constraint firstAttribute="trailing" secondItem="QiC-sk-yp6" secondAttribute="trailing" id="7gL-Ci-1Dh"/>
-                            <constraint firstItem="QiC-sk-yp6" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="t6L-S5-D1l"/>
+                            <constraint firstItem="Kte-sv-J3O" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="J2g-nU-4Dn"/>
+                            <constraint firstItem="Kte-sv-J3O" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="P1F-bf-XII"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Kte-sv-J3O" secondAttribute="bottom" constant="444" id="WDl-Yp-Fge"/>
+                            <constraint firstAttribute="trailing" secondItem="Kte-sv-J3O" secondAttribute="trailing" id="cVc-LJ-Wui"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="project" image="project" id="cPa-gy-q4n">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="eeu-dI-InY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="86.806596701649184"/>
+            <point key="canvasLocation" x="1048.8" y="235.23238380809596"/>
         </scene>
-        <!--training-->
+        <!--Training View Controller-->
         <scene sceneID="npV-JD-Sm4">
             <objects>
                 <viewController id="gg5-jk-LzX" customClass="TrainingViewController" customModule="TheFHG" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,60 +82,122 @@
                         <viewControllerLayoutGuide type="bottom" id="1S9-M6-gKv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SXa-dO-Ro2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fhgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="II0-14-viH">
-                                <rect key="frame" x="0.0" y="28" width="375" height="115"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herotraining" translatesAutoresizingMaskIntoConstraints="NO" id="7yZ-Yc-oeO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="6YZ-Ww-cp6"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="115" id="mfQ-7u-dl0"/>
+                                    <constraint firstAttribute="height" constant="110" id="SOf-ne-hj9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="II0-14-viH" secondAttribute="trailing" id="05g-Ww-nBk"/>
-                            <constraint firstItem="II0-14-viH" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" id="IHH-Hz-qsZ"/>
-                            <constraint firstItem="II0-14-viH" firstAttribute="top" secondItem="2dO-Yd-1xr" secondAttribute="bottom" constant="8" id="KXO-4a-mVL"/>
-                            <constraint firstAttribute="trailing" secondItem="II0-14-viH" secondAttribute="trailing" id="aun-si-f0T"/>
-                            <constraint firstItem="II0-14-viH" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" id="oIr-aB-OQ4"/>
+                            <constraint firstAttribute="trailing" secondItem="7yZ-Yc-oeO" secondAttribute="trailing" id="W3b-mL-4TR"/>
+                            <constraint firstItem="7yZ-Yc-oeO" firstAttribute="top" secondItem="2dO-Yd-1xr" secondAttribute="bottom" id="mkS-tf-i7O"/>
+                            <constraint firstItem="7yZ-Yc-oeO" firstAttribute="leading" secondItem="SXa-dO-Ro2" secondAttribute="leading" id="zsB-nc-3B5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="training" image="training" id="aUF-Ua-MaT">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Da9-be-RXZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMx-tp-HVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5999999999999" y="827.13643178410803"/>
+            <point key="canvasLocation" x="1048.8" y="949.47526236881572"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4Gs-g5-lid"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.13559346595006921" green="0.61276570431472077" blue="0.1352502499950099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="gg5-jk-LzX" kind="relationship" relationship="viewControllers" id="le3-3L-2dJ"/>
+                        <segue destination="l0S-fu-s4b" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="HG6-RB-NQt" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="ZPA-Y9-Rqp" kind="relationship" relationship="viewControllers" id="le3-3L-2dJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-684" y="237"/>
+            <point key="canvasLocation" x="-878" y="235"/>
+        </scene>
+        <!--introduction-->
+        <scene sceneID="4cJ-u8-N5P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="l0S-fu-s4b" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="introduction" image="intro1" id="acW-dT-cKf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rid-h4-ASq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="Zh6-S0-bob"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXU-Hc-G93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="-462"/>
+        </scene>
+        <!--project-->
+        <scene sceneID="tfq-Md-eCJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HG6-RB-NQt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="project" image="project1" id="cPa-gy-q4n">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-1"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Iv3-Jf-9BF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="bRW-Uh-Ptx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nr-DS-JHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="236"/>
+        </scene>
+        <!--training-->
+        <scene sceneID="4Vx-J5-5da">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZPA-Y9-Rqp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="training" image="social" id="aUF-Ua-MaT">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="BRS-27-Tqj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gg5-jk-LzX" kind="relationship" relationship="rootViewController" id="RH9-eN-DgB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sk7-qH-BBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="951"/>
         </scene>
     </scenes>
     <resources>
-        <image name="fhgLogo" width="350" height="125"/>
-        <image name="home" width="32" height="32"/>
-        <image name="project" width="32" height="32"/>
-        <image name="training" width="32" height="32"/>
+        <image name="herointro" width="1000" height="263"/>
+        <image name="heroproject" width="1000" height="263"/>
+        <image name="herotraining" width="1000" height="263"/>
+        <image name="intro1" width="32" height="16"/>
+        <image name="project1" width="32" height="27"/>
+        <image name="social" width="32" height="31"/>
     </resources>
 </document>
