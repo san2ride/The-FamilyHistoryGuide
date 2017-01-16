@@ -1,14 +1,14 @@
 //
-//  ProjectsViewController.swift
+//  ProjectTableViewController.swift
 //  TheFHG
 //
-//  Created by don't touch me on 12/23/16.
-//  Copyright © 2016 trvl, LLC. All rights reserved.
+//  Created by don't touch me on 1/16/17.
+//  Copyright © 2017 trvl, LLC. All rights reserved.
 //
 
 import UIKit
 
-class ProjectsViewController: UIViewController, UINavigationBarDelegate {
+class ProjectTableViewController: UITableViewController, UINavigationBarDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,4 +23,7 @@ class ProjectsViewController: UIViewController, UINavigationBarDelegate {
         
     }
 
+
+
+    
 }
