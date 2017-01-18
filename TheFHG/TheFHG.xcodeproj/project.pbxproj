@@ -14,6 +14,8 @@
 		A49C39581E09B0A70095F3D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49C39571E09B0A70095F3D3 /* AppDelegate.swift */; };
 		A49C39611E09B0A70095F3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C39601E09B0A70095F3D3 /* Assets.xcassets */; };
 		A49C39641E09B0A70095F3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49C39621E09B0A70095F3D3 /* LaunchScreen.storyboard */; };
+		A4B0D8AC1E2F342400C0B079 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0D8AB1E2F342400C0B079 /* ProjectTableViewCell.swift */; };
+		A4DE265B1E2E8ABC00265653 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A49C39601E09B0A70095F3D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A49C39631E09B0A70095F3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49C39651E09B0A70095F3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B0D8AB1E2F342400C0B079 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
+		A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 				A426D26A1E0DDB6700106442 /* IntroViewController.swift */,
 				A415DFE51E2D564E00CE5247 /* ProjectTableViewController.swift */,
 				A426D26E1E0DDC2D00106442 /* TrainingViewController.swift */,
-				A415DFE31E2D546600CE5247 /* Main.storyboard */,
+				A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -64,6 +68,7 @@
 		A426D2721E0DDC8200106442 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4B0D8AB1E2F342400C0B079 /* ProjectTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 		A49C39561E09B0A70095F3D3 /* TheFHG */ = {
 			isa = PBXGroup;
 			children = (
+				A415DFE31E2D546600CE5247 /* Main.storyboard */,
 				A426D2731E0DDC8F00106442 /* Model */,
 				A426D2721E0DDC8200106442 /* View */,
 				A426D2711E0DDC6D00106442 /* Controller */,
@@ -175,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4DE265B1E2E8ABC00265653 /* ProjectViewController.swift in Sources */,
+				A4B0D8AC1E2F342400C0B079 /* ProjectTableViewCell.swift in Sources */,
 				A415DFE61E2D564E00CE5247 /* ProjectTableViewController.swift in Sources */,
 				A426D26B1E0DDB6700106442 /* IntroViewController.swift in Sources */,
 				A426D26F1E0DDC2D00106442 /* TrainingViewController.swift in Sources */,
