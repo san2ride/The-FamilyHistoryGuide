@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProjectTableViewController: UITableViewController, UINavigationBarDelegate {
+class ProjectTableViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
