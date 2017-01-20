@@ -16,7 +16,7 @@
 		A49C39611E09B0A70095F3D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49C39601E09B0A70095F3D3 /* Assets.xcassets */; };
 		A49C39641E09B0A70095F3D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49C39621E09B0A70095F3D3 /* LaunchScreen.storyboard */; };
 		A4B0D8AC1E2F342400C0B079 /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B0D8AB1E2F342400C0B079 /* ProjectTableViewCell.swift */; };
-		A4DE265B1E2E8ABC00265653 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */; };
+		A4DD17811E31948F00A28C6D /* ProjectProjectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DD17801E31948F00A28C6D /* ProjectProjectTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		A49C39631E09B0A70095F3D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49C39651E09B0A70095F3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B0D8AB1E2F342400C0B079 /* ProjectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTableViewCell.swift; sourceTree = "<group>"; };
-		A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		A4DD17801E31948F00A28C6D /* ProjectProjectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectProjectTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +59,9 @@
 		A426D2711E0DDC6D00106442 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A439735F1E3153C2002C5F9D /* ProjectGoalTableViewController.swift */,
-				A426D26A1E0DDB6700106442 /* IntroViewController.swift */,
-				A415DFE51E2D564E00CE5247 /* ProjectTableViewController.swift */,
-				A426D26E1E0DDC2D00106442 /* TrainingViewController.swift */,
-				A4DE265A1E2E8ABC00265653 /* ProjectViewController.swift */,
+				A4DD17821E31954100A28C6D /* Project */,
+				A4DD17831E31954C00A28C6D /* Introduction */,
+				A4DD17841E31955800A28C6D /* Training */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -109,6 +107,32 @@
 				A426D2701E0DDC5200106442 /* Supporting Files */,
 			);
 			path = TheFHG;
+			sourceTree = "<group>";
+		};
+		A4DD17821E31954100A28C6D /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A415DFE51E2D564E00CE5247 /* ProjectTableViewController.swift */,
+				A4DD17801E31948F00A28C6D /* ProjectProjectTableViewController.swift */,
+				A439735F1E3153C2002C5F9D /* ProjectGoalTableViewController.swift */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		A4DD17831E31954C00A28C6D /* Introduction */ = {
+			isa = PBXGroup;
+			children = (
+				A426D26A1E0DDB6700106442 /* IntroViewController.swift */,
+			);
+			name = Introduction;
+			sourceTree = "<group>";
+		};
+		A4DD17841E31955800A28C6D /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				A426D26E1E0DDC2D00106442 /* TrainingViewController.swift */,
+			);
+			name = Training;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,13 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4DE265B1E2E8ABC00265653 /* ProjectViewController.swift in Sources */,
 				A4B0D8AC1E2F342400C0B079 /* ProjectTableViewCell.swift in Sources */,
 				A43973601E3153C2002C5F9D /* ProjectGoalTableViewController.swift in Sources */,
 				A415DFE61E2D564E00CE5247 /* ProjectTableViewController.swift in Sources */,
 				A426D26B1E0DDB6700106442 /* IntroViewController.swift in Sources */,
 				A426D26F1E0DDC2D00106442 /* TrainingViewController.swift in Sources */,
 				A49C39581E09B0A70095F3D3 /* AppDelegate.swift in Sources */,
+				A4DD17811E31948F00A28C6D /* ProjectProjectTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
